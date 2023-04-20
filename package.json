@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint:check": "eslint '{app,assets,components,constants,store,types}/**/*.{js,jsx,ts,tsx,json}'",
-    "lint:format": "prettier --write '{app,assets,components,constants,store,types}/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install"
+    "lint:format": "prettier --write '{app,assets,components,constants,store,types}/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
     "next": "13.3.0",
