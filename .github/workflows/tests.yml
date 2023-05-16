@@ -1,9 +1,12 @@
 name: tests
 
 on:
+  push:
+    branches:
+      - development
   pull_request:
     paths:
-      - './**'
+      - '.'
 
 jobs:
   build:
