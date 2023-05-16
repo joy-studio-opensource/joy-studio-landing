@@ -1,0 +1,8 @@
+export { default as BaseFormItem } from './FormItem'
+export { default as BaseFormInput } from './Input'
+export { default as BaseFormInputPassword } from './InputPassword'
+export { default as BaseFormDatePicker } from './DatePicker'
+export { default as BaseFormSelect } from './Select'
+export { default as BaseFormTextArea } from './TextArea'
+export { default as BaseFormCheckbox } from './Checkbox'
+export { default as BaseFormSwitch } from './Switch'
