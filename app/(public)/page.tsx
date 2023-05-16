@@ -1,3 +1,3 @@
 export default function PublicPage() {
-  return <>Page</>
+  return <h1>Page</h1>
 }
