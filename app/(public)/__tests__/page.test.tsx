@@ -7,8 +7,6 @@ import Page from '../page'
 it('must have heading', () => {
   render(<Page />)
 
-  console.log('TEST')
-
   const headingEl = screen.getByRole('heading')
 
   expect(headingEl).toBeInTheDocument()
