@@ -13,6 +13,7 @@ declare module 'styled-components' {
       GREY: string
       DARK: string
       WHITE: string
+      BLACK: string
     }
     typography: {
       FONT_48: string
@@ -20,6 +21,8 @@ declare module 'styled-components' {
       FONT_24: string
       FONT_18: string
       FONT_15: string
+      FONT_WEIGHT_500: string
+      FONT_WEIGHT_800: string
     }
   }
 }

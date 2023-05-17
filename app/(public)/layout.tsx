@@ -7,6 +7,9 @@ import { ReactNode } from 'react'
 // Next
 import { Metadata } from 'next'
 
+// Components
+import { PublicLayout as CustomPublicLayout } from '@/components/pages/public'
+
 // Headers
 export const metadata: Metadata = {
   title: 'Joy Studio',
@@ -14,10 +17,5 @@ export const metadata: Metadata = {
 }
 
 export default function PublicLayout({ children }: { children: ReactNode }) {
-  return (
-    <>
-      <h1>Public Here</h1>
-      {children}
-    </>
-  )
+  return <CustomPublicLayout>{children}</CustomPublicLayout>
 }

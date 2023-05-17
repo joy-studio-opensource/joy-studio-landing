@@ -7,9 +7,9 @@ import { memo } from 'react'
 import { StyledText } from './components'
 
 // Types
-import { TBaseTextProps } from './types'
+import { IBaseTextProps } from './types'
 
-const BaseText = memo((props: TBaseTextProps) => {
+const BaseText = memo((props: IBaseTextProps) => {
   return <StyledText {...props} />
 })
 
