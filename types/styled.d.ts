@@ -21,7 +21,9 @@ declare module 'styled-components' {
       FONT_24: string
       FONT_18: string
       FONT_15: string
+      FONT_WEIGHT_400: string
       FONT_WEIGHT_500: string
+      FONT_WEIGHT_600: string
       FONT_WEIGHT_800: string
     }
   }
