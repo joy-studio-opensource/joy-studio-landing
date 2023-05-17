@@ -13,13 +13,21 @@ import BaseButton from '@/components/base/Button'
 const { Header } = Layout
 
 const StyledHeader = styled(Header)`
+  /* Background */
+  background-color: ${props => props.theme.colors.BLACK} !important;
+
+  /* Display */
+  height: 84px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  background-color: ${props => props.theme.colors.BLACK} !important;
-  height: 84px !important;
 
+  /* Border bottom for header */
+  border-bottom: 1px solid #0c0c0c;
+  filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.1));
+
+  /* Override menu of ant design */
   .ant-menu-overflow {
     background-color: ${props => props.theme.colors.BLACK} !important;
   }
