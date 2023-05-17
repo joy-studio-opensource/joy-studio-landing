@@ -49,6 +49,14 @@ const StyledMenu = styled(Menu)`
 const StyledButton = styled(BaseButton)`
   width: 145px;
   height: 50px !important;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+
+  span {
+    color: ${props => props.theme.colors.BLACK};
+    font-size: ${props => props.theme.typography.FONT_15};
+    font-weight: ${props => props.theme.typography.FONT_WEIGHT_500};
+  }
 `
 
 export { StyledHeader, StyledImageWrapper, StyledMenu, StyledButton }
