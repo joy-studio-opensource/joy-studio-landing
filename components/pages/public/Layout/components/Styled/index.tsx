@@ -7,14 +7,11 @@ import styled from 'styled-components'
 import { Layout } from 'antd'
 
 // Antd - Layout
-const { Content, Footer } = Layout
+const { Content } = Layout
 
 const StyledContent = styled(Content)`
   padding: '0 50px';
+  min-height: 85vh !important;
 `
 
-const StyledFooter = styled(Footer)`
-  text-align: 'center';
-`
-
-export { StyledContent, StyledFooter }
+export { StyledContent }

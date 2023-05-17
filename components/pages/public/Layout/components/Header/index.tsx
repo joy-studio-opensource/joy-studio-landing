@@ -1,7 +1,7 @@
 'use client'
 
 // React
-import { memo, useMemo } from 'react'
+import { memo } from 'react'
 
 // Next
 import Image from 'next/image'
@@ -16,23 +16,9 @@ import {
 import { BaseText } from '@/components/base'
 
 // Constants
-import { E_APP_STYLE_TYPOGRAPHY } from '@/constants'
-
-// Antd
-import { MenuItemType } from 'antd/lib/menu/hooks/useItems'
+import { E_APP_STYLE_TYPOGRAPHY, MENU_LIST } from '@/constants'
 
 const PublicHeader = memo(() => {
-  // Menu Items
-  const menuItems = useMemo((): MenuItemType[] => {
-    return [
-      { key: 'about', label: 'About' },
-      { key: 'out-works', label: 'Our Works' },
-      { key: 'services', label: 'Services' },
-      { key: 'careers', label: 'Careers' },
-      { key: 'blog', label: 'Blog' }
-    ]
-  }, [])
-
   return (
     <StyledHeader>
       {/* Logo */}
@@ -57,7 +43,7 @@ const PublicHeader = memo(() => {
       <StyledMenu
         mode='horizontal'
         defaultSelectedKeys={['about']}
-        items={menuItems}
+        items={MENU_LIST}
       />
 
       {/* Get In Touch Button */}

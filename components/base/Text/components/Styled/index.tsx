@@ -19,10 +19,20 @@ import omit from 'lodash.omit'
 const { Text } = Typography
 
 export const StyledText = styled((props: IBaseTextProps) => (
-  <Text {...omit(props, ['fontSize', 'fontColor', 'fontWeight'])} />
+  <Text
+    {...omit(props, [
+      'fontSize',
+      'fontColor',
+      'fontWeight',
+      'lineHeight',
+      'letterSpacing'
+    ])}
+  />
 ))<IBaseTextProps>`
   color: ${props => props?.fontColor || 'white'} !important;
   font-size: ${props =>
     props?.fontSize || E_APP_STYLE_TYPOGRAPHY.FONT_15} !important;
   font-weight: ${props => props?.fontWeight || 400} !important;
+  line-height: ${props => props?.lineHeight || '18.15px'} !important;
+  letter-spacing: ${props => props?.letterSpacing || '.5px'} !important;
 `
