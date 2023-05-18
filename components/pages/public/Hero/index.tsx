@@ -36,7 +36,7 @@ const PublicHero = memo(() => {
           </BaseText>
 
           {/* Buttons */}
-          <div className='flex items-center justify-center gap-20'>
+          <div className='flex items-center justify-center gap-5'>
             <StyledHeroButton type='primary'>More About Us</StyledHeroButton>
             <StyledHeroButton ghost>Getting Started</StyledHeroButton>
           </div>
