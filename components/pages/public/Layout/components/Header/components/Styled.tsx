@@ -18,6 +18,8 @@ const StyledHeader = styled(Header)`
 
   /* Display */
   height: 84px !important;
+  padding-left: 64px;
+  padding-right: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -40,12 +40,15 @@ const StyledHeroWrapper = styled.section.attrs({
 const StyledHeroButton = styled(BaseButton)`
   width: 183px !important;
   height: 54px !important;
+  border-radius: 10px !important;
 
   span {
     font-size: ${props => props.theme.typography.FONT_18};
   }
 
   &:nth-child(1) {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+
     span {
       color: ${props => props.theme.colors.BLACK};
     }

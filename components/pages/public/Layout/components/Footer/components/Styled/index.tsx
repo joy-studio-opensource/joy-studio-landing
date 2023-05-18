@@ -6,7 +6,6 @@ import styled from 'styled-components'
 const StyledFooter = styled.footer`
   background-color: ${props => props.theme.colors.BLACK};
   height: 483px;
-  padding: 30px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

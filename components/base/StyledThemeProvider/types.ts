@@ -1,4 +1,7 @@
-// Styled Components
-import { ThemeProviderProps, DefaultTheme } from 'styled-components'
+// React
+import { ComponentProps } from 'react'
 
-export type IBaseStyledThemeProviderProps = ThemeProviderProps<DefaultTheme>
+// Styled Components
+import { ThemeProvider } from 'styled-components'
+
+export type IBaseStyledThemeProviderProps = ComponentProps<typeof ThemeProvider>
